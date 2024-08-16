@@ -1,0 +1,29 @@
+<div class="productsNav">
+  <h1 class="h1Title">Inventory</h1>
+  <button type="button" class="btn btn-primary btnAdd" routerLink="/create">Add</button>
+</div>
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid">
+    <div id="navbarSupportedContent">
+      <form #form="ngForm" class="d-flex" role="search" (ngSubmit)="searchForProducts()">
+        <input class="form-control me-2" type="search" placeholder="Search" name="search" [(ngModel)]="this.wordSearch">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-secondary btnMar" (click)="this.loadProducts()">Reset</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="products">
+  <div *ngFor="let i of productList" class="card" style="width: 18rem;">
+    <div [routerLink]='["/products", i.id]'>
+      <img src="{{i.imageUrl}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{i.itemName}} | ${{i.price}}</h5>
+        <br>
+        <a class="btn btn-primary custBtn" [routerLink]='["/edit", i.id]' role="button">Edit</a>
+        <a class="btn btn-primary custBtn" (click)="onDelete(i.id)" role="button">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<h1 class="h1Title">Welcome!</h1>
+<h2>Best Sellers</h2>
+<div class="homeProducts">
+
+  <div>
+    <div>
+      <div class="card" style="width: 18rem;">
+        <div [routerLink]='["/products", productList[0].id]'>
+          <img src="{{productList[0].imageUrl}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{productList[0].itemName}} | ${{productList[0].price}}</h5>
+            <p class="card-text">{{productList[0].description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card" style="width: 18rem;">
+      <div [routerLink]='["/products", productList[1].id]'>
+        <img src="{{productList[1].imageUrl}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{productList[1].itemName}} | ${{productList[1].price}}</h5>
+          <p class="card-text">{{productList[1].description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card" style="width: 18rem;">
+      <div [routerLink]='["/products", productList[2].id]'>
+        <img src="{{productList[2].imageUrl}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{productList[2].itemName}} | ${{productList[2].price}}</h5>
+          <p class="card-text">{{productList[2].description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

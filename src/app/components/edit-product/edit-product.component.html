@@ -1,0 +1,24 @@
+<h1 class="h1Title">Edit product</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+          <input type="text" class="form-control inputField" placeholder="Product Name" name="product name"
+                [(ngModel)]="currentProduct.itemName">
+    </div>
+    <div class="row">
+          <textarea type="text" class="form-control inputText" placeholder="Description" name="description"
+                [(ngModel)]="currentProduct.description"></textarea>
+    </div>
+    <div class="row">
+          <input type="text" class="form-control inputField" placeholder="Price" name="price"
+                [(ngModel)]="currentProduct.price">
+    </div>
+    <div class="row">
+          <input type="text" class="form-control inputField" placeholder="Image url" name="imageUrl"
+                [(ngModel)]="currentProduct.imageUrl">
+    </div>
+    <div class="row">
+          <input type="text" class="form-control inputField" placeholder="Wood Species" name="woodspecies"
+                [(ngModel)]="currentProduct.woodSpecies">
+    </div>
+    <button type="submit" class="btn btn-primary btnMar">Submit</button>
+</form>

@@ -1,0 +1,25 @@
+<h1 class="h1Title">Create New Product</h1>
+
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+            <input type="text" class="form-control inputField" placeholder="Product Name" name="product name"
+                  [(ngModel)]="newProduct.itemName">
+      </div>
+      <div class="row">
+            <textarea type="text" class="form-control inputText" placeholder="Description" name="description"
+                  [(ngModel)]="newProduct.description"></textarea>
+      </div>
+      <div class="row">
+            <input type="text" class="form-control inputField" placeholder="Price" name="price"
+                  [(ngModel)]="newProduct.price">
+      </div>
+      <div class="row">
+            <input type="text" class="form-control inputField" placeholder="Image url" name="imageUrl"
+                  [(ngModel)]="newProduct.imageUrl">
+      </div>
+      <div class="row">
+            <input type="text" class="form-control inputField" placeholder="Wood Species" name="woodspecies"
+                  [(ngModel)]="newProduct.woodSpecies">
+      </div>
+      <button type="submit" class="btn btn-primary btnMar">Submit</button>
+</form>

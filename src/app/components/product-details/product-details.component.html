@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <h1>Product Details</h1>
+    <div class="row">
+        <div class="col-4">
+            <img src="{{currentProduct.imageUrl}}" class="aboutImg image-fluid" />
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <div class="col-8">
+                    <h2>{{currentProduct.itemName}}</h2>
+                </div>
+                <div class="detailsDisplay">
+                    <div class="col-8">
+                        <p>Details: {{currentProduct.description}}</p>
+                    </div>
+                    <div class="col-8">
+                        <p>Wood Species: {{currentProduct.woodSpecies}}</p>
+                    </div>
+                    <div class="col-8">
+                        <p>Price: ${{currentProduct.price}}</p>
+                    </div>
+                </div>
+                <div>
+                    <a class="btn btn-primary custBtn" routerLink="/products" role="button">Back</a>
+                    <a class="btn btn-primary custBtn" [routerLink]='["/edit", currentProduct.id]' role="button">Edit</a>
+                    <a class="btn btn-primary custBtn" (click)="onDelete(currentProduct.id)" role="button">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

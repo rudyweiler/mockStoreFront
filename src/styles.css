@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: "Radio Canada Big", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    background-image: linear-gradient(#adc178, #a98467);
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+}
+
+.h1Title {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.navFont {
+    font-size: 20px;
+}
+
+.navLogo {
+    font-size: 25px;
+}
+
+.imgIcon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.homeProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carImg {
+    height: 300px;
+}
+
+.aboutImg {
+    width: 400px;
+}
+
+.aboutItems {
+    margin: 20px;
+}
+
+.custBtn {
+    display: inline;
+    justify-content: center;
+    margin: auto 30px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 250px;
+
+}
+
+.card:hover {
+    box-shadow: 2px 2px 5px gray;
+}
+
+.inputField {
+
+    margin: 5px;
+    margin-left: 100px;
+    max-width: 400px;
+}
+
+.inputText {
+    margin: 5px;
+    margin-left: 100px;
+    max-width: 400px;
+}
+
+.productsNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btnAdd {
+    display: block;
+    margin: 20px;
+}
+
+.detailsDisplay {
+    margin: 30px;
+    border: 2px beige solid;
+    width: 600px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.footer {
+    background-color: beige;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btnMar{
+    margin-left: 5px;
+}
+
+
